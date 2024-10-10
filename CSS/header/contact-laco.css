@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-size: 10px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+@media (min-width: 1200px) {
+    .container{
+        min-width: 1170px;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    background: #fff;
+    color: #333;
+}
+/* .container { */
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    /* margin-right: auto ; */
+    /* margin-left: auto ; */
+/* } */
+.row {
+    margin: 0; /* Xóa margin mặc định */
+    padding: 0; /* Xóa padding mặc định */
+}
+/* Row */
+.row {
+    /* display: flex;  */
+    justify-content: space-between; Khoảng cách giữa hai phần
+    /* align-items: center; Căn giữa theo chiều dọc */
+    /* width: 100%; */
+    /* flex-wrap: nowrap;  */
+    /* overflow: hidden; */
+}
+
+/* Left Section */
+.head-left-option {
+    display: flex; /* Sử dụng Flexbox cho phần trái */
+}
+
+.contact {
+    display: flex; /* Use Flexbox for the contact navigation */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.contact-link {
+    list-style: none; /* Remove list styling */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.contact-link li {
+    margin-right: 10px; /* Space between items */
+}
+
+.contact-link li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 13px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #fafafa;
+    
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.contact-link li a:hover {
+    color: rgb(7, 28, 44) !important; /* Active link color */
+    background: #fff; 
+}
+
+/* Right Section */
+.head-right-option {
+    display: left; 
+    justify-content: flex-end;
+}
+
+.contact-link li.laco {
+    display: flex; /* Ensure proper alignment for the logo */
+}
+
+.contact-link li.laco a {
+    display: flex; /* Make the link flex */
+    align-items: center; /* Center the image vertically */
+}
+
+.contact-link li.laco img {
+    width: 30px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+}
+

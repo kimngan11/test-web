@@ -1,0 +1,639 @@
+/* CSS cho Slider */
+
+/* Slider */
+.slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.mySlides {
+    min-width: 100%;
+}
+
+.mySlides-img {
+    width: 130%;
+    height: auto;
+    margin-left: -15%;
+}
+
+.pages {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    height: 25px;
+}
+
+/* Home Page Slide */
+.home-page-slide {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.home-page-slide .slide-body {
+    width: 100%;
+}
+
+.home-page-slide .responsive-slider .slides {
+    width: 100%;
+}
+
+.home-page-slide .slide-body img {
+    min-width: 100%;
+    max-width: inherit !important;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) !important;
+}
+
+.home-page-slide .responsive-slider .slides ul li {
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+}
+
+.home-slide-content {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+}
+
+.home-slide-content h1 {
+    font-size: 60px;
+    margin: 0 0 30px 0;
+    color: #363636;
+}
+
+.home-slide-content-sub {
+    font-size: 16px;
+    color: #545454;
+    margin-bottom: 30px;
+}
+
+.responsive-slider .pages .page {
+    width: 40px;
+    height: 20px;
+    border: none;
+    background: none;
+    opacity: 0.4;
+    margin-bottom: 30px;
+}
+
+.home-slide-btn {
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fafafa;
+    text-transform: uppercase;
+    padding: 0 30px;
+    height: 48px;
+    line-height: 46px;
+    background: #ce5043;
+    border-radius: 2px;
+    border: 1px solid #ce5043;
+}
+
+.home-slide-btn:hover {
+    border: 1px solid #b52821;
+    color: #ce5043;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dropdowns */
+.iam-iwant {
+    display: flex;
+    width: 100%;
+    padding: 16px 0;
+    background: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+}
+
+
+.dropdown-iam-select li a {
+    display: block;
+    color: #252525;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.dropdown-iam-select li a:hover {
+    color: #3f5ca9;
+}
+
+.iam-iwant .col-sm-6 {
+    position: static;
+}
+
+.iwant-select {
+    position: static;
+}
+
+.iwant-select .dropdown {
+    width: 100%;
+}
+
+.row-iwant {
+    display: flex;
+    overflow: hidden;
+    margin-left: 200px;
+}
+
+.iwant-select-btn {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    display: block;
+    padding: 0 15px;
+    width: 100%;
+    height: 48px;
+    background: #ebebeb;
+    border-radius: 2px;
+    color: rgb(20, 30, 210);
+    border: 1px solid #d4d4d4;
+    position: relative;
+}
+
+.iwant-select-btn span {
+    position: absolute;
+    right: 12px;
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.dropdown-iwant-select {
+    position: absolute;
+    left: 0;
+    transform: translateY(14px);
+    z-index: 1000;
+    display: none;
+    min-width: 100%;
+    float: left;
+    padding: 30px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #e1e1e1;
+    background-clip: padding-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-iwant-select li {
+    display: block;
+    width: 100%;
+}
+
+.dropdown-iwant-select li a {
+    display: block;
+    color: #252525;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.dropdown-iwant-select li a:hover {
+    color: rgb(20, 30, 210);
+}
+
+.iwant-tit {
+    display: block;
+    width: 100%;
+    color: #3f5ca9;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+.iwant-text {
+    display: block;
+    width: 100%;
+    color: #545454;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.iwant-list {
+    display: block;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.iwant-list li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px 0 10px 34px;
+    position: relative;
+}
+
+.iwant-list li:last-child {
+    border: none;
+}
+
+.iwant-list li a {
+    display: block;
+    font-size: 16px;
+    color: #252525;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 7px 0;
+}
+
+.iwant-list li a i {
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #3f5ca9;
+}
+
+.iwan-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -12px;
+}
+
+.iwan-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+
+.iwant-btn a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 48px;
+    line-height: 50px;
+    color: #fafafa;
+    border-radius: 2px;
+    background: rgb(20, 30, 210);
+    text-decoration: none;
+}
+
+.iwant-btn a i {
+    float: right;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.iwant-btn a:hover {
+    background: rgb(160, 210, 255);
+}
+
+/* body 3 */
+.home-special-product {
+    display: block;
+    width: 100%;
+    background: #ebebeb url(../images/hp_bg_special_product.png) center bottom no-repeat;
+    padding: 60px 0;
+    background-size: contain;
+}
+
+.home-cate-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.home-cate-title h2 {
+    font-size: 36px;
+    color: rgb(20, 30, 210);
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+.home-cate-title p {
+    display: block;
+    width: 75%;
+    color: #545454;
+    margin: 15px auto;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.home-sp-list {
+    display: flex;
+    margin: 0 -15px; /* Tạo khoảng cách giữa các item */
+    overflow: hidden; 
+}
+
+.home-sp-list .item {
+    flex: 0 0 auto; /* Giữ cho phần tử có kích thước cố định */
+    width: 360px; /* Hoặc bất kỳ kích thước nào bạn muốn */
+    margin: 0 15px; /* Khoảng cách giữa các phần tử */
+}
+
+.home-sp-content {
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.home-sp-icon {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.home-sp-icon img {
+    height: 82px;
+    width: auto !important;
+    display: inline-block !important;
+}
+
+.home-sp-tit {
+    display: block;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.home-sp-text {
+    display: block;
+    width: 100%;
+    height: 104px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.home-sp-control {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-sp-control a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #3f5ca9;
+    border: 1px solid #3f5ca9;
+    border-radius: 2px;
+    margin: 0 2px;
+}
+
+.home-sp-control a:hover {
+    background: #3f5ca9;
+    color: #fafafa;
+}
+
+.btn-stroke-style1 {
+    display: inline-block;
+    padding: 0 30px;
+    height: 36px;
+    line-height: 36px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    color: #252525;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.btn-stroke-style1:hover {
+    text-decoration: none;
+    background: rgb(20, 30, 210);
+    border: 1px solid #141ed2;
+    color: #fff;
+}
+
+.btn-flat-style1 {
+    display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(20, 30, 210);
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #3f5ca9;
+    text-decoration: none;
+}
+
+.btn-flat-style1:hover {
+    border: 1px solid #3f5ca9;
+    color: rgb(160, 210, 255);
+    padding: 0 15px;
+    border-radius: 2px;
+    background: #fafafa;
+    text-decoration: none;
+}
+
+.home-sp-list .owl-nav {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #3f5ca9;
+    border: 1px solid #3f5ca9;
+    border-radius: 2px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.home-sp-list .owl-nav i {
+    vertical-align: middle;
+}
+
+.home-sp-list .owl-nav:hover {
+    background: rgb(160, 210, 255);
+    color: #fafafa;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+.home-special-product .owl-carousel .owl-stage-outer {
+    padding: 0 0 5px 0;
+}
+
+.home-sp-list .nav-buttons {
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc (nếu cần) */
+    margin-top: 30px;
+}
+.nav-buttons{
+    text-align: center;
+    margin-top: 30px ;
+}
+
+.nav-buttons button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #3f5ca9;
+    border: 1px solid #3f5ca9;
+    border-radius: 2px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background: rgb(160, 210, 255);
+    color: #fafafa;
+}
+
+.nav-buttons i {
+    vertical-align: middle;
+}
+
+/* Item styles */
+.item {
+    width: 360px;
+    margin-right: 30px;
+}
+
+.home-sp-content {
+    padding: 30px;
+    height: 370px;
+    color: rgb(20, 30, 210);
+}
+
+.home-sp-icon {
+    margin-bottom: 30px;
+    width: 100%;
+    display: block;
+}
+
+.home-sp-tit {
+    font-size: 24px;
+    display: block;
+}
+
+.home-sp-text {
+    display: block;
+    width: 100%;
+    height: 104px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.mb-detail-banner-img {
+    height: 200px;
+}
+
+.responsive-slider .pages .page {
+    margin-bottom: 15px;
+    width: 30px;
+}
+
+.col-lg-12 {
+    padding: 0px !important;
+}
+
+/* body 4 */
+.home-promotion {
+    display: block;
+    width: 100%;
+    background: white;
+    padding: 60px 0;
+}
+
+.home-pr-list {
+    display: block;
+    width: 100%;
+}
+
+.home-pr-content {
+    display: block;
+    width: 100%;
+    background: #ebebeb;
+    height: 380px;
+}
+
+.home-pr-content .home-pr-img {
+    width: 360px;
+    height: 223px;
+}
+
+.home-pr-img img {
+    position: absolute; 
+    width: 360px;
+    height: 223px; 
+}
+
+.home-pr-tit {
+    display: inline-block;
+    width: 100%;
+    padding: 30px;
+    background: #ebebeb;
+    border-color: #d4d4d4;
+}
+
+.home-pr-content p {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    color: #545454;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.home-pr-content a {
+    margin: 20px 0 0 30px;
+}
