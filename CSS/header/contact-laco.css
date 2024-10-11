@@ -21,45 +21,34 @@ body {
     background: #fff;
     color: #333;
 }
-/* .container { */
-    /* padding-right: 15px; */
-    /* padding-left: 15px; */
-    /* margin-right: auto ; */
-    /* margin-left: auto ; */
-/* } */
+
 .row {
-    margin: 0; /* Xóa margin mặc định */
-    padding: 0; /* Xóa padding mặc định */
-}
-/* Row */
-.row {
-    /* display: flex;  */
-    justify-content: space-between; Khoảng cách giữa hai phần
-    /* align-items: center; Căn giữa theo chiều dọc */
-    /* width: 100%; */
-    /* flex-wrap: nowrap;  */
-    /* overflow: hidden; */
+    margin: 0;
+    padding: 0; 
 }
 
-/* Left Section */
+.row {
+    justify-content: space-between; 
+}
+
 .head-left-option {
-    display: flex; /* Sử dụng Flexbox cho phần trái */
+    display: flex;
 }
 
 .contact {
-    display: flex; /* Use Flexbox for the contact navigation */
-    justify-content: flex-start; /* Align items to the start */
+    display: flex;
+    justify-content: flex-start;
 }
 
 .contact-link {
-    list-style: none; /* Remove list styling */
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
 .contact-link li {
-    margin-right: 10px; /* Space between items */
+    margin-right: 10px;
 }
 
 .contact-link li a {
@@ -75,7 +64,7 @@ body {
 }
 
 .contact-link li a:hover {
-    color: rgb(7, 28, 44) !important; /* Active link color */
+    color: rgb(7, 28, 44) !important;
     background: #fff; 
 }
 
@@ -86,16 +75,16 @@ body {
 }
 
 .contact-link li.laco {
-    display: flex; /* Ensure proper alignment for the logo */
+    display: flex;
 }
 
 .contact-link li.laco a {
-    display: flex; /* Make the link flex */
-    align-items: center; /* Center the image vertically */
+    display: flex;
+    align-items: center;
 }
 
 .contact-link li.laco img {
-    width: 30px; /* Adjust width */
-    height: auto; /* Maintain aspect ratio */
+    width: 30px;
+    height: auto;
 }
 
