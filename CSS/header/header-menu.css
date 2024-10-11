@@ -36,6 +36,7 @@
 }
 
 .mb-header-logo {
+
     display: inline-block;
     margin-top: 6px;
 }
@@ -57,7 +58,8 @@
 }
 
 .header-menu-left-option li {
-    display: inline-block;
+
+    display: inline-block; /*hien thi tren 1 dong*/
 }
 
 .header-menu-left-option li a {
@@ -231,6 +233,7 @@ li.header-menu-left-support a {
 
 .header-right-btn-select {
     display: inline-block;
+
 }
 
 .header-btn-ib {
@@ -241,10 +244,6 @@ li.header-menu-left-support a {
     display: block;
     padding: 0 15px;
     height: 36px;
-    background: #facc45; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #facc45, #f8bd30); /* For Safari */
-    background: -o-linear-gradient(right, #facc45, #f8bd30); /* For Opera */
-    background: -moz-linear-gradient(right, #facc45, #f8bd30); /* For Firefox */
     background: rgb(160, 210, 255); /* Standard syntax */
     border-radius: 2px;
     margin-top: 12px;
