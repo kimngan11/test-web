@@ -1,195 +1,105 @@
-.top-nav {
-    position: sticky;
-    max-width: 100%;
-    height: 60px;
-    z-index: 1;
-    margin: auto;
-    padding-top: 10px;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* navigation */
+
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.top-nav {
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.navbar-menu {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  top: 40px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+/* logo */
+.navbar-logoMB img {
+  width: 90px;
+  margin: 10px 0;
 }
 
-.menu-left {
-    display: flex;
-    align-items: center;
+.navbar-menu-left {
+  display: flex;
+  align-content: center;
 }
 
-.logo img {
-    height: 40px; /* Điều chỉnh theo kích thước logo */
+.navbar-menu-links {
+  display: flex;
 }
 
-.menu-options {
-    margin-left: 30px;
+.navbar-menu-link a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 60px;
+  color: #252525;
+  line-height: 60px;
+  padding: 0 15px;
 }
 
-.menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+.caret {
+  padding-left: 5px;
 }
 
-.menu-list li {
-    position: relative;
-    margin-right: 20px;
+.navbar-menu-right {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  width: 585px;
+  height: 48px;
+  padding: 0 15px;
 }
 
-.menu-list a {
-    text-decoration: none;
-    color: #252525;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-    padding: 15px 10px;
-    display: block;
-    transition: color 0.2s;
+.search {
+  position: relative;
+  width: 260px;
+  height: 48px;
 }
 
-.menu-list a:hover {
-    color: #3f5ca9;
+.search input {
+  width: 230px;
+  height: 36px;
+  padding: 1px 2px 1px 35px;
+  margin: 12px 30px 0 0;
+  border: 1px solid silver;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ebebeb;
-    min-width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 999;
+.search-icon {
+  position: absolute;
+  left: 5px;
+  top: 37%;
+
+  width: 24px;
+  height: 24px;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.navbar-btn {
+  width: 180px;
+  height: 48px;
 }
 
-.dropdown-content h5 {
-    margin: 10px 0;
-    font-weight: bold;
+.navbar-btn {
+  display: flex;
 }
 
-.dropdown-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.navbar-btn button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 180px;
+  height: 36px;
+  padding: 0 15px;
+  margin-top: 12px;
+  background-color: rgb(160, 210, 255);
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.dropdown-content ul li {
-    padding: 5px 15px;
-}
-
-.dropdown-content ul li a {
-    color: #252525;
-    text-decoration: none;
-}
-
-.dropdown-content ul li a:hover {
-    text-decoration: underline;
-}
-
-.menu-icon img {
-    height: 20px; /* Kích thước biểu tượng */
-    vertical-align: middle;
-    margin-right: 5px;
-}
-
-.menu-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.btn-select {
-    margin-right: 20px;
-}
-
-.header-btn {
-    background: #facc45;
-    border: none;
-    padding: 10px 15px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: bold;
-    color: #fafafa;
-    border-radius: 2px;
-    cursor: pointer;
-    position: relative;
-}
-
-.header-btn .material-icons {
-    vertical-align: middle;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    min-width: 180px;
-    margin-top: 5px;
-}
-
-.btn-select:hover .dropdown-menu {
-    display: block;
-}
-
-.search-bar {
-    position: relative;
-}
-
-.search-input {
-    width: 230px;
-    padding: 10px 35px 10px 10px;
-    border: 1px solid #d4d4d4;
-    border-radius: 2px;
-    font-size: 14px;
-}
-
-.search-bar i {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    opacity: 0.54;
-}
-
-.search-results {
-    position: absolute;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    width: 100%;
-    margin-top: 5px;
-}
-
-.result-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.result-list li {
-    padding: 10px 15px;
-}
-
-.result-list li a {
-    color: #252525;
-    text-decoration: none;
-}
-
-.result-list li a:hover {
-    text-decoration: underline;
+.navbar-btn button i {
+  margin-left: 5px;
 }
