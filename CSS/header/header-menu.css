@@ -16,6 +16,7 @@
     background-size: cover;
 }
 
+
 .mb-header-menu {
     display: block;
     width: 100%;
@@ -35,7 +36,6 @@
 }
 
 .mb-header-logo {
-    float: left;
     display: inline-block;
     margin-top: 6px;
 }
@@ -57,7 +57,6 @@
 }
 
 .header-menu-left-option li {
-    float: left;
     display: inline-block;
 }
 
@@ -232,7 +231,6 @@ li.header-menu-left-support a {
 
 .header-right-btn-select {
     display: inline-block;
-    float: right;
 }
 
 .header-btn-ib {
