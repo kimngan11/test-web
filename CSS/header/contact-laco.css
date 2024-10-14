@@ -1,97 +1,103 @@
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 html {
-    font-size: 10px;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  font-size: 10px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 @media (min-width: 1200px) {
-    .container{
-        min-width: 1170px;
-    }
+  .container {
+    min-width: 1170px;
+  }
 }
-.container{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    background: #fff;
-    color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  background: #fff;
+  color: #333;
 }
 
 .row {
-    margin: 0;
-    padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
 .row {
-    justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .head-left-option {
-    display: flex;
+  display: flex;
 }
 
 .contact {
-    display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .contact-link {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .contact-link li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .contact-link li a {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 13px;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    color: #fafafa;
-    
-    text-decoration: none;
-    padding: 0 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 13px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #fafafa;
+
+  text-decoration: none;
+  padding: 0 5px;
 }
 
 .contact-link li a:hover {
-    color: rgb(7, 28, 44) !important;
-    background: #fff; 
+  color: rgb(7, 28, 44) !important;
+  background: #fff;
 }
 
 /* Right Section */
 .head-right-option {
-    display: left; 
-    justify-content: flex-end;
+  display: left;
+  justify-content: flex-end;
 }
 
 .contact-link li.laco {
-    display: flex;
+  display: flex;
 }
 
 .contact-link li.laco a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .contact-link li.laco img {
-    width: 30px;
-    height: auto;
+  width: 30px;
+  height: auto;
 }
-

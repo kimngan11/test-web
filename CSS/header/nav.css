@@ -103,3 +103,45 @@
 .navbar-btn button i {
   margin-left: 5px;
 }
+
+/* menu-box */
+
+.menu-box {
+  background-color: #ebebeb;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  /* display: none; */
+  padding-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* item-grid 8 */
+.item-grid-8 {
+  grid-column: 1 / 2; /* Cũng chiếm cột từ 1 đến 2, giống item-grid 5 */
+  grid-row: 3; /* Đặt ở hàng thứ 3 để nằm dưới item-grid 5 */
+}
+
+.list .list-main a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #141ed2;
+}
+
+.list li a {
+  font-size: 14px;
+  color: black;
+}
+
+.list .list-extra a {
+  color: #141ed2;
+}
+
+.list > li {
+  padding: 5px 0;
+}
