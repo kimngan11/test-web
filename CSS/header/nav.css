@@ -104,10 +104,12 @@
 
 .menu-box {
   /* Ẩn menu box theo mặc định */
+  display: none;
   position: absolute;
   left: -43px;
   background-color: #ebebeb; /* Màu nền cho menu */
   width: 1299px;
+  top: 85%;
   z-index: 101; /* Đảm bảo menu nằm trên các thành phần khác */
 }
 
@@ -139,4 +141,8 @@
 
 .item-grid-8 {
   grid-row: 3/4; /* Định vị item trong grid */
+}
+
+.navbar-menu-link:hover .menu-box {
+  display: block; /* Hiện menu box khi hover vào li */
 }
