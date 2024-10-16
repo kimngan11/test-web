@@ -146,3 +146,35 @@
 .navbar-menu-link:hover .menu-box {
   display: block; /* Hiện menu box khi hover vào li */
 }
+
+.menu-btn {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  width: 180px;
+  display: none;
+}
+
+.grid-btn div a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.grid-btn div span i {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.grid-btn div {
+  padding: 15px 0;
+  padding-left: 20px;
+}
+
+.navbar-btn {
+  display: flex;
+}
+
+.navbar-btn:hover .menu-btn {
+  display: block;
+}
