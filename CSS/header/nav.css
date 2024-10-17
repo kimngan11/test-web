@@ -126,7 +126,7 @@
 }
 
 .navbar-menu-link a:hover {
-  color: blue;
+  color: #141ed2;
 }
 
 .list {
@@ -135,12 +135,14 @@
 
 .icon {
   position: absolute;
-  color: blue;
+  color: #141ed2;
   left: 10px;
 }
 
 .list-main {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #141ed2;
 }
 
 .list li {
@@ -155,15 +157,21 @@
 }
 
 .list li a:hover {
-  color: blue;
+  color: #141ed2;
 }
 
 .list .list-main a {
-  color: blue; /* Màu chữ cho các liên kết chính */
+  color: #141ed2; /* Màu chữ cho các liên kết chính */
+}
+
+.item-grid {
+  margin-bottom: 30px;
+  margin-left: 20px;
 }
 
 .item-grid-8 {
-  grid-row: 3/4; /* Định vị item trong grid */
+  grid-row: 3/4;
+  margin-left: 20px;
 }
 
 .navbar-menu-link:hover .menu-box {
