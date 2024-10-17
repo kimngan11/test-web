@@ -211,7 +211,7 @@
     top: 115px;
     z-index: 10;
     /*background: #3f5ca9;*/
-    background: rgb(20,30,210) !important;
+    background: rgb(20,30,210);
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
