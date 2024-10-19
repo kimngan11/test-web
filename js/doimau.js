@@ -19,4 +19,5 @@ elements.forEach((element) => {
     if (color === 'rgb(20, 30, 210)' ) { // Kiểm tra mã màu xanh
         element.style.color = 'rgb(7,28,44)'; // Đổi thành trắng cho dễ đọc
     }
+
 });
