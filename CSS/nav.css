@@ -8,10 +8,8 @@
 }
 
 .navbar-menu {
-  width: 100%;
   height: 60px;
   background-color: rgb(255, 255, 255);
-  top: 40px;
 }
 
 /* logo */
@@ -22,7 +20,6 @@
 
 .navbar-menu-left {
   display: flex;
-  align-content: center;
 }
 
 .navbar-menu-links {
@@ -34,29 +31,20 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  height: 60px;
   color: black;
   line-height: 60px;
   padding: 0 15px;
 }
 
-.caret {
-  padding-left: 5px;
-}
 
 .navbar-menu-right {
-  position: relative;
   display: flex;
   justify-content: flex-end;
-  top: 0;
-  width: 585px;
-  height: 48px;
   padding: 0 15px;
 }
 
 .search {
   position: relative;
-  width: 260px;
   height: 48px;
 }
 
@@ -76,20 +64,12 @@
   height: 24px;
 }
 
-.navbar-btn {
-  width: 180px;
-  height: 48px;
-  display: flex;
-}
 
 .navbar-btn button {
-  font-size: 14px;
   font-weight: 700;
-  line-height: 20px;
   text-transform: uppercase;
   width: 180px;
   height: 36px;
-  padding: 0 15px;
   margin-top: 12px;
   background-color: rgb(160, 210, 255);
   color: white;
@@ -97,28 +77,35 @@
   cursor: pointer;
 }
 
-.navbar-btn button i {
-  margin-left: 5px;
+@media screen and (max-width: 1200px) {
+  .box {
+    max-width: 900px;
+  }
+  .navbar-menu-right {
+    display: none;
+  }
 }
+
 
 /* menu-box */
 
 .menu-box {
-  /* Ẩn menu box theo mặc định */
   display: none;
   position: absolute;
-  left: -43px;
-  background-color: #ebebeb; /* Màu nền cho menu */
-  width: 1299px;
-  top: 85%;
-  z-index: 101; /* Đảm bảo menu nằm trên các thành phần khác */
+  width: 100%;
+  background-color: #ebebeb;
+  max-width: 1188px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .grid-container {
   display: grid;
   margin: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 cot */
+  grid-template-rows: repeat(3, 1fr); /* 3 hang */
 }
 
 .san-pham {
@@ -135,25 +122,25 @@
 
 .icon {
   position: absolute;
+  color: blue;
+}
+
+.list-main {
+  font-size: 16px;
+  margin-left: 30px;
   color: #141ed2;
   left: 10px;
 }
 
-.list-main {
-  font-size: 14px;
-  font-weight: 700;
-  color: #141ed2;
-}
-
 .list li {
-  margin: 10px 0;
+  margin: 20px 30px;
 }
 
 .list li a {
   font-size: 14px;
   font-weight: normal;
   text-transform: none;
-  color: black; /* Màu chữ cho tất cả các liên kết */
+  color: black;
 }
 
 .list li a:hover {
@@ -197,13 +184,10 @@
   padding-right: 5px;
 }
 
+
 .grid-btn div {
   padding: 15px 0;
   padding-left: 20px;
-}
-
-.navbar-btn {
-  display: flex;
 }
 
 .navbar-btn:hover .menu-btn {
