@@ -26,7 +26,7 @@ a:hover {
 }
 
 .background {
-  width: 100vh;
+  width: 60%;
   height: 100vh;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 .main-content {
   position: absolute;
   top: 25%;
-  left: 65%;
+  left: 70%;
 }
 
 .logo {
