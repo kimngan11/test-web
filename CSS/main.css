@@ -264,10 +264,11 @@
   width: 100%;
   background: white;
   padding: 60px 0;
+  overflow: hidden;
 }
 
 .home-pr-list {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
 }
@@ -277,14 +278,15 @@
   width: 100%;
   background: #ebebeb;
   height: 380px;
+  margin: 0 20px;
 }
 
-.home-pr-content .home-pr-img {
+.home-pr-img {
   height: 223px;
+  width: 360px;
 }
 
 .home-pr-img img {
-  position: absolute;
   width: 360px;
   height: 223px;
 }
