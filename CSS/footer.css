@@ -18,8 +18,13 @@
     line-height: 70px; /*can giua theo chieu doc*/
     color: rgb(20,30,210);
     border: 1px solid #3f5ca9;
+<<<<<<< HEAD
     border-radius: 50%; /*lam tron */
     vertical-align: middle; /*can chinh dung cach voi cac phan tu xung quanh*/
+=======
+    border-radius: 50%;
+    vertical-align: middle;
+>>>>>>> 09d2cf57121a60ed281c63f4ec18a53fdcbe86a1
     margin-right: 30px;
 }
 
@@ -38,7 +43,11 @@
     display: block;
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
+<<<<<<< HEAD
     font-weight: bold; /*lam dam chu*/
+=======
+    font-weight: bold;
+>>>>>>> 09d2cf57121a60ed281c63f4ec18a53fdcbe86a1
     color: #545454;
 }
 
@@ -56,7 +65,11 @@
 }
 
 .footer-service-info a:hover {
+<<<<<<< HEAD
     text-decoration: underline; /*hien thi gach duoi*/
+=======
+    text-decoration: underline;
+>>>>>>> 09d2cf57121a60ed281c63f4ec18a53fdcbe86a1
 }
 
 .footer-cate-title {
@@ -66,23 +79,22 @@
     margin-bottom: 60px;
 }
 
-    .footer-cate-title h2 {
-        font-size: 36px;
-        /*color: #3f5ca9;*/
-        color: rgb(20,30,210);
-        margin: 0 0 15px 0;
-        font-weight: bold;
-    }
+.footer-cate-title h2 {
+    font-size: 36px;
+    color: rgb(20,30,210);
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
 
-    .footer-cate-title p {
-        display: block;
-        width: 75%;
-        color: #545454;
-        margin: 15px auto;
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: bold;
-    }
+.footer-cate-title p {
+    display: block;
+    width: 75%;
+    color: #545454;
+    margin: 15px auto;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+}
 
 
 .footer-menu {
@@ -112,31 +124,27 @@
     
 }
 
-    .footer-menu-list li {
-        display: block;
-        width: 100%;
-    }
+.footer-menu-list li {
+    display: block;
+    width: 100%;
+}
 
-        .footer-menu-list li a {
-            display: inline-block;
-            font-size: 14px;
-            color: #7c7c7c;
-            padding: 5px 0;
-            text-decoration: none;
-            transition: all 0.1s ease;
-            -webkit-transition: all 0.1s ease;
-            -moz-transition: all 0.1s ease;
-        }
+.footer-menu-list li a {
+    display: inline-block;
+    font-size: 14px;
+    color: #7c7c7c;
+    padding: 5px 0;
+    text-decoration: none;
+}
 
-            .footer-menu-list li a:hover {
-                color: rgb(20,30,210);
-            }
+.footer-menu-list li a:hover {
+    color: rgb(20,30,210);
+}
 
 /* copyright */
 .footer-copyright {
     width: 100%;
     display: block;
-    /*background: #3f5ca9;*/
     background: rgb(20,30,210);
     padding: 15px 0;
 }
@@ -157,29 +165,29 @@
     margin: 0;
 }
 
-    .footer-rule li {
-        float: left;
-        display: block;
-        padding: 0 10px;
-        border-right: 1px solid #fafafa;
-        height: 18px;
-        line-height: 18px;
-    }
+.footer-rule li {
+    float: left;
+    display: block;
+    padding: 0 10px;
+    border-right: 1px solid #fafafa;
+    height: 18px;
+    line-height: 18px;
+}
 
-        .footer-rule li:last-child {
-            border-right: none;
-        }
+.footer-rule li:last-child {
+    border-right: none;
+}
 
-        .footer-rule li a {
-            display: inline-block;
-            color: #fafafa;
-            font-size: 12px;
-        }
+.footer-rule li a {
+    display: inline-block;
+    color: #fafafa;
+    font-size: 12px;
+}
 
-            .footer-rule li a:hover {
-                color: #fafafa;
-                text-decoration: underline;
-            }
+.footer-rule li a:hover {
+    color: #fafafa;
+    text-decoration: underline;
+}
 
 .footer-social {
     display: inline-block;
@@ -189,16 +197,15 @@
     line-height: 18px;
 }
 
-    .footer-social:hover {
-        color: #fafafa;
-        cursor: pointer;
-        text-decoration: underline;
-    }
-
-    .footer-social img {
-        margin-right: 5px;
-        vertical-align: top;
-    }
+.footer-social:hover {
+    color: #fafafa;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.footer-social img {
+    margin-right: 5px;
+    vertical-align: top;
+}
 
 /* nav */
 
@@ -208,59 +215,50 @@
     right: -147px;
     top: 115px;
     z-index: 10;
-    /*background: #3f5ca9;*/
     background: rgb(20,30,210);
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -o-transition: all 0.2s;
 }
 
-    .quicknav:hover {
-        right: 0;
-    }
+.quicknav:hover {
+    right: 0;
+}
 
-    .quicknav a {
-        border-top: 1px solid rgba(255,255,255,0.15);
-        display: block;
-        padding: 8px 8px 8px 5px;
-        color: #fafafa;
-        transition: all 0.15s ease;
-        -webkit-transition: all 0.15s ease;
-        -moz-transition: all 0.15s ease;
-    }
+.quicknav a {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: block;
+    padding: 8px 8px 8px 5px;
+    color: #fafafa;
+}
 
-        .quicknav a i {
-            vertical-align: bottom;
-            margin-right: 10px;
-        }
+.quicknav a i {
+    vertical-align: bottom;
+    margin-right: 10px;
+}
 
-        .quicknav a:hover {
-            text-decoration: none;
-            background: rgb(160,210,255) !important;
-        }
+.quicknav a:hover {
+    text-decoration: none;
+    background: rgb(160,210,255) !important;
+}
 
-        .quicknav a span {
-            text-transform: uppercase;
-            color: #FFF;
-            font-family: 'Roboto Condensed', sans-serif;
-        }
+.quicknav a span {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
-        .quicknav a:last-child {
-            border-bottom: 1px solid #0067c5;
-        }
+.quicknav a:last-child {
+    border-bottom: 1px solid #0067c5;
+}
 
 .quicknav-special {
     background: rgb(7,28,44) !important;
 }
 
-    .quicknav-special a:hover {
-        background: rgb(120,138,152) !important;
-    }
+.quicknav-special a:hover {
+    background: rgb(120,138,152) !important;
+}
 
 .row-footer {
     display: flex;
-    /* justify-content: space-between; */ /* Khoảng cách giữa hai phần */
-    /* align-items: center; */ /* Căn giữa theo chiều dọc */
     width: 100%;
     flex-wrap: nowrap;
     overflow: hidden;

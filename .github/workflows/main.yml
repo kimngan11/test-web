@@ -1,0 +1,24 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Thay thế 'main' bằng tên branch của bạn nếu cần
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Thay đổi phiên bản Node.js nếu cần
+
+      - name: Build and Deploy
+        run: |
+          npm install
+          npm run build
+          npm run deploy  # Đảm bảo bạn có script deploy trong package.json
