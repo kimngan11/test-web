@@ -18,13 +18,8 @@
     line-height: 70px; /*can giua theo chieu doc*/
     color: rgb(20,30,210);
     border: 1px solid #3f5ca9;
-<<<<<<< HEAD
     border-radius: 50%; /*lam tron */
     vertical-align: middle; /*can chinh dung cach voi cac phan tu xung quanh*/
-=======
-    border-radius: 50%;
-    vertical-align: middle;
->>>>>>> 09d2cf57121a60ed281c63f4ec18a53fdcbe86a1
     margin-right: 30px;
 }
 
@@ -43,11 +38,7 @@
     display: block;
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
-<<<<<<< HEAD
     font-weight: bold; /*lam dam chu*/
-=======
-    font-weight: bold;
->>>>>>> 09d2cf57121a60ed281c63f4ec18a53fdcbe86a1
     color: #545454;
 }
 
@@ -65,11 +56,7 @@
 }
 
 .footer-service-info a:hover {
-<<<<<<< HEAD
     text-decoration: underline; /*hien thi gach duoi*/
-=======
-    text-decoration: underline;
->>>>>>> 09d2cf57121a60ed281c63f4ec18a53fdcbe86a1
 }
 
 .footer-cate-title {
