@@ -1,3 +1,9 @@
+:root{
+  --color-blue: rgb(20, 30, 210);
+  --light-blue:rgb(160, 210, 255);
+  --light-gray: #ebebeb;
+}
+
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -31,7 +37,7 @@ body {
 }
 
 header {
-  background-color: rgb(20, 30, 210);
+  background-color: var(--color-blue);
 }
 
 .box {

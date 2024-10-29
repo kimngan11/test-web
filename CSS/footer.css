@@ -1,3 +1,9 @@
+:root{
+    --color-blue: rgb(20, 30, 210);
+    --light-blue:rgb(160, 210, 255);
+    --light-gray: #ebebeb;
+  }
+
 .footer-service {
     display: block;
     width: 100%;
@@ -16,7 +22,7 @@
     height: 70px;
     text-align: center;
     line-height: 70px; /*can giua theo chieu doc*/
-    color: rgb(20,30,210);
+    color: var(--color-blue);
     border: 1px solid #3f5ca9;
     border-radius: 50%; /*lam tron */
     vertical-align: middle; /*can chinh dung cach voi cac phan tu xung quanh*/
@@ -51,7 +57,7 @@
 
 .footer-service-info a {
     display: block;
-    color: rgb(20,30,210);
+    color: var(--color-blue);
     font-size: 14px;
 }
 
@@ -68,7 +74,7 @@
 
 .footer-cate-title h2 {
     font-size: 36px;
-    color: rgb(20,30,210);
+    color: --color-blue;
     margin: 0 0 15px 0;
     font-weight: bold;
 }
@@ -87,7 +93,7 @@
 .footer-menu {
     display: block;
     width: 100%;
-    background: #ebebeb;
+    background: var(--light-gray);
     border-top: 1px solid #d4d4d4;
     padding: 30px 0;
 }
@@ -125,14 +131,14 @@
 }
 
 .footer-menu-list li a:hover {
-    color: rgb(20,30,210);
+    color: var(--color-blue);
 }
 
 /* copyright */
 .footer-copyright {
     width: 100%;
     display: block;
-    background: rgb(20,30,210);
+    background: var(--color-blue);
     padding: 15px 0;
 }
 
@@ -202,7 +208,7 @@
     right: -147px;
     top: 115px;
     z-index: 10;
-    background: rgb(20,30,210);
+    background: var(--color-blue);
 }
 
 .quicknav:hover {
@@ -223,7 +229,7 @@
 
 .quicknav a:hover {
     text-decoration: none;
-    background: rgb(160,210,255) !important;
+    background: var(--light-blue)!important;
 }
 
 .quicknav a span {

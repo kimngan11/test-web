@@ -1,5 +1,11 @@
 /* navigation */
 
+:root{
+  --color-blue: rgb(20, 30, 210);
+  --light-blue:rgb(160, 210, 255);
+  --light-gray: #ebebeb;
+}
+
 #nav {
   position: sticky;
   top: 0;
@@ -71,7 +77,7 @@
   width: 180px;
   height: 36px;
   margin-top: 12px;
-  background-color: rgb(160, 210, 255);
+  background-color: var(--light-blue);
   color: white;
   border: none;
   cursor: pointer;
@@ -93,7 +99,7 @@
   display: none;
   position: absolute;
   width: 100%;
-  background-color: #ebebeb;
+  background-color: var(--light-gray);
   max-width: 1188px;
   right: 0;
   left: 0;
@@ -113,7 +119,7 @@
 }
 
 .navbar-menu-link a:hover {
-  color: #141ed2;
+  color: var(--color-blue);
 }
 
 .list {
@@ -122,13 +128,13 @@
 
 .icon {
   position: absolute;
-  color: blue;
+  color: var(--color-blue);
 }
 
 .list-main {
   font-size: 16px;
   margin-left: 30px;
-  color: #141ed2;
+  color: var(--color-blue);
   left: 10px;
 }
 
@@ -145,11 +151,11 @@
 }
 
 .list li a:hover {
-  color: #141ed2;
+  color: var(--color-blue);
 }
 
 .list .list-main a {
-  color: #141ed2; /* Màu chữ cho các liên kết chính */
+  color: var(--color-blue); /* Màu chữ cho các liên kết chính */
 }
 
 .item-grid {
