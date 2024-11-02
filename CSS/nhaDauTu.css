@@ -1,7 +1,7 @@
 .detail_container {
   position: relative;
   max-width: 1200px;
-  margin: 60px 20% auto;
+  margin: 0 auto;
 }
 
 .detail_container h1 {
