@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: rgb(20, 30, 210);
+  --l_blue: rgb(160, 210, 255);
+  --l_gray: #ebebeb;
+  --l_back: #545454;
+  --font: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.line_1 {
+}
+
+.topic {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: var(--blue);
+  font-weight: 700;
+}
