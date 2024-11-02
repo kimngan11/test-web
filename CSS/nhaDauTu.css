@@ -124,3 +124,17 @@
   text-decoration: underline;
   color: #007a7a;
 }
+
+.content_table {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content_table_right {
+  margin-top: 30px;
+}
+
+.content_table_right div span {
+  color: blue;
+}
