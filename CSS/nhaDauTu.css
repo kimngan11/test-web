@@ -1,28 +1,123 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --blue: rgb(20, 30, 210);
-  --l_blue: rgb(160, 210, 255);
-  --l_gray: #ebebeb;
-  --l_back: #545454;
-  --font: "Roboto", sans-serif;
-}
-
-.container {
+.detail_container {
+  position: relative;
   max-width: 1200px;
-  width: 100%;
+  margin: 60px 20% auto;
 }
 
-.line_1 {
-}
-
-.topic {
-  font-size: 26px;
+.detail_container h1 {
   text-transform: uppercase;
-  color: var(--blue);
+  color: blue;
+}
+
+.invest_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_list {
+  position: relative;
+
+  width: 270px;
+  height: 60px;
+
+  background-color: white;
+  border: 1px solid blue;
+
+  margin: 10px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  cursor: pointer;
+}
+
+.menu_list span {
+  font-size: 18px;
+  color: blue;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.menu_list::before,
+.menu_list::after {
+  content: "";
+  position: absolute;
+
+  top: 7.5px;
+  left: 249px;
+
+  width: 41px;
+  height: 41px;
+
+  transform: rotate(45deg);
+
+  background-color: white;
+  border: 1px solid blue;
+}
+
+.menu_list::before {
+  z-index: -1;
+}
+
+.menu_list::after {
+  border: none;
+
+  left: 248px;
+}
+
+.invest_head_list {
+  width: 800px;
+  height: 90px;
+  background-color: rgb(228, 228, 228);
+  margin: 10px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+}
+
+.invest_head_list:hover {
+  color: blue;
+  background-color: rgb(193, 226, 255);
+}
+
+.invest_head_list i {
+  margin: 0 20px;
+}
+
+.info {
+  margin-top: 100px;
+  display: flex;
+}
+
+.content {
+  color: #007a7a;
+  margin-left: 90px;
+  text-align: justify;
+}
+
+.content h3:first-of-type {
+  font-size: 43px;
+}
+
+.content h3:nth-of-type(2) {
+  font-size: 63px;
+}
+
+.content span {
+  font-size: 16px;
+}
+
+.content div {
+  margin-top: 100px;
+}
+
+.content div a {
+  font-size: 18px;
   font-weight: 700;
+  text-decoration: underline;
+  color: #007a7a;
 }
