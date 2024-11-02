@@ -1,14 +1,13 @@
 .detail_container {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 50px;
 }
 
-.anh-gioi-thieu{
+.anh-gioi-thieu {
   width: 100%;
 }
 
-.detail_container h1 {
+.detail_container .container h1 {
   text-transform: uppercase;
   color: blue;
 }
@@ -71,7 +70,7 @@
 }
 
 .invest_head_list {
-  width: 800px;
+  width: 700px;
   height: 90px;
   background-color: rgb(228, 228, 228);
   margin: 10px 0;
