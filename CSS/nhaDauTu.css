@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.anh-gioi-thieu{
+  width: 100%;
+}
+
 .detail_container h1 {
   text-transform: uppercase;
   color: blue;
