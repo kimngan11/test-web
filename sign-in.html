@@ -3,54 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MB bank</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
-    <!-- css -->
-    <link rel="stylesheet" href="./CSS/sign-in.css" />
+    <title>Sign in</title>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Average&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Average&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/sign-in.css" />
   </head>
   <body>
-    <div class="content">
-      <img src="./img/mb-bank.jpg" alt="" class="background" />
-      <div class="header">
-        <div class="icon-call">
-          <img
-            src="https://online.mbbank.com.vn/assets/images/img-login/icons-login.svg"
-            alt="call"
-          />
-        </div>
-        <div class="hotline">Hotline:</div>
-        <div class="tel"><a href="tel: 1900545426">1900 545 426</a></div>
+    <div class="container">
+      <div class="header_content">
+        <img
+          src="https://online.mbbank.com.vn/assets/images/img-login/icons-login.svg"
+          alt=""
+        />
+        <span>Hotline: </span>
+        <a href="tel: 1900545426">1900 545 426</a>
         <div class="language">
           <span>VN</span>
-          <img
-            src="https://media.istockphoto.com/id/864417828/vi/vec-to/c%E1%BB%9D-vi%E1%BB%87t-nam.jpg?s=2048x2048&w=is&k=20&c=qJcMCIqMeV7xOn690rxjrMJj6CaoH_r4YGayDe4f3QU="
-            alt="language"
-          />
+          <img src="./img/VN.jpg" alt="Ngôn ngữ Việt Nam" />
         </div>
       </div>
-      <div class="main-content">
-        <img src="./img/logo.png" alt="" class="logo" />
+
+      <div class="main_content">
+        <img
+          src="https://online.mbbank.com.vn/assets/images/logo-blue.svg"
+          alt=""
+        />
         <div>Chào mừng bạn đến với</div>
         <div>MB Internet Banking</div>
-        <div>Tên đăng nhập</div>
-        <div>
-          <input type="text" placeholder="TÊN ĐĂNG NHẬP" class="user" />
-        </div>
-        <div>Nhập mật khẩu</div>
-        <div>
-          <input type="text" placeholder="NHẬP MẬT KHẨU" class="pass" />
-        </div>
-        <div class="btn">
-          <button><span>Đăng nhập</span></button>
-        </div>
+        <form action="">
+          <div class="form">
+            <div>Tên đăng nhập</div>
+            <input type="text" placeholder="TÊN ĐĂNG NHẬP" id="name" />
+            <small></small>
+          </div>
+
+          <div class="form">
+            <div>Email</div>
+            <input type="text" placeholder="NHẬP ĐỊA CHỈ EMAIL" id="email" />
+            <small></small>
+          </div>
+
+          <div class="form">
+            <div>Nhập mật khẩu</div>
+            <input type="text" placeholder="NHẬP MẬT KHẨU" id="pass" />
+            <small></small>
+          </div>
+
+          <div class="form">
+            <div>Xác nhận mật khẩu</div>
+            <input
+              type="text"
+              placeholder="XÁC NHẬN MẬT KHẨU"
+              id="check_pass"
+            />
+            <small></small>
+          </div>
+
+          <button onclick="showError()"><span>Đăng nhập</span></button>
+
+          <div class="sign_in">
+            <span>Đã có tài khoảng?</span>
+            <a href="#">Đăng nhập</a>
+          </div>
+        </form>
       </div>
     </div>
+    <!-- js -->
+    <script src="./js/sign_in.js"></script>
   </body>
 </html>

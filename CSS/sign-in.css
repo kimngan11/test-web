@@ -4,141 +4,145 @@
   box-sizing: border-box;
 }
 
+:root {
+  --blue: #3ca7ee;
+  --pupper: #9b408f;
+}
+
 body {
-  font-family: "Average", serif;
-}
+  background: linear-gradient(120deg, var(--blue), var(--pupper));
 
-a {
-  text-decoration: none;
-}
+  font-family: "Roboto", sans-serif;
 
-a:hover {
-  text-decoration: underline;
-}
-
-.header {
-  position: relative;
   display: flex;
-  width: 100%;
-  height: 112px;
-  align-items: center;
   justify-content: center;
 }
 
-.background {
-  width: 60%;
+.container {
+  width: 600px;
   height: 100vh;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
 }
 
-.content {
+.header_content {
   display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.contact {
-  display: flex;
-  padding: 15px 15px;
   align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100px;
 }
 
-.hotline {
-  margin: 0 7px;
-  color: #2100bd;
+.header_content > span {
+  color: blue;
   font-size: 16px;
   font-weight: 600;
 }
 
-.icon-call img {
-  width: 24px;
-  height: 24px;
+.header_content a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .language {
-  width: 61px;
-  height: 28px;
+  padding: 2px;
+
+  border: 1px solid gray;
+  border-radius: 20px;
+
   display: flex;
-  padding: 0 8px;
-  border: 0.571px solid rgb(227, 227, 227);
-  border-radius: 14px;
   align-items: center;
+
+  margin-right: 10px;
+
+  cursor: pointer;
 }
 
 .language span {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 12px;
-  margin-right: 8px;
+  margin: 0 3px;
 }
 
 .language img {
   width: 16px;
-  height: 16px;
+  margin: 0 2px;
 }
 
-.tel {
-  margin-right: 14px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.main-content {
+.main_content {
+  top: 150px;
   position: absolute;
-  top: 25%;
-  left: 70%;
+  left: 22%;
 }
 
-.logo {
-  width: 153px;
-  height: 64px;
+.main_content img {
+  width: 155px;
 }
 
-.main-content div:nth-of-type(1) {
+.main_content div:first-of-type {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
-.main-content div:nth-of-type(2) {
+.main_content div:nth-of-type(2) {
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
 }
 
-.main-content div:nth-of-type(3),
-.main-content div:nth-of-type(5) {
-  font-size: 16px;
-  font-weight: 700;
+.form {
+  margin: 16px 0;
 }
 
-.main-content div:nth-of-type(4),
-.main-content div:nth-of-type(6) {
-  width: 432px;
-  height: 61px;
-  margin-top: 15px;
+.form div {
+  font-size: 16px !important;
+  font-weight: 700 !important;
 }
 
 input {
-  width: 402px;
-  height: 51px;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 10px;
   padding: 14px;
-  border: 1px solid rgb(20, 30, 210);
-  border-radius: 5px;
 }
 
-.btn {
-  margin-top: 6px;
+button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(20, 30, 210);
+  border-radius: 10px;
 }
 
-.btn button {
-  width: 402px;
-  height: 41px;
-  padding: 7px;
-  background-color: #141ed2;
-  border-radius: 8px;
-}
-
-.btn button span {
+button span {
+  color: white;
   font-size: 16px;
   font-weight: 600;
-  color: white;
+}
+
+.form.error small {
+  color: red;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.form.error input {
+  border: 1px solid red;
+}
+
+.sign_in {
+  position: absolute;
+  margin-top: 25px;
+  left: 17%;
+}
+
+.sign_in a {
+  color: blue;
+  text-decoration: none;
+}
+
+.sign_in a:hover {
+  text-decoration: underline;
 }
