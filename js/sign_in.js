@@ -58,11 +58,18 @@ function showError() {
     formCheckPass.querySelector("small").textContent =
       "Error: Bạn cần xác nhận mật khẩu";
     hasError = true;
+  } else if (checkPass.value.trim() !== pass.value.trim()) {
+    // Kiểm tra nếu không khớp
+    const formCheckPass = checkPass.closest(".form");
+    formCheckPass.classList.add("error");
+    formCheckPass.querySelector("small").textContent =
+      "Error: Mật khẩu không trùng khớp";
+    hasError = true;
   }
 
   // Nếu không có lỗi, có thể thực hiện hành động đăng nhập (nếu cần)
   if (!hasError) {
     // Thực hiện hành động đăng nhập
-    console.log("Đăng nhập thành công");
+    alert("Đăng nhập thành công");
   }
 }
