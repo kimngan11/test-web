@@ -32,7 +32,7 @@ function showError() {
       "Error: Email không được để trống";
     hasError = true;
   } else {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Biểu thức chính quy cho email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email.value.trim())) {
       const formEmail = email.closest(".form");
       formEmail.classList.add("error");
@@ -49,6 +49,47 @@ function showError() {
     formPass.querySelector("small").textContent =
       "Error: Mật khẩu không được để trống";
     hasError = true;
+  } else {
+    hasError = false;
+
+    // Kiểm tra mật khẩu có ít nhất 5 ký tự
+    if (pass.value.length < 5) {
+      const formPass = pass.closest(".form");
+      formPass.classList.add("error");
+      formPass.querySelector("small").textContent =
+        "Error: Mật khẩu phải có ít nhất 5 ký tự";
+      hasError = true;
+    }
+
+    // Kiểm tra ký tự in hoa
+    let hasUpperCase = false;
+    for (let i = 0; i < pass.value.length; i++) {
+      if (
+        pass.value[i] === pass.value[i].toUpperCase() &&
+        pass.value[i] !== pass.value[i].toLowerCase()
+      ) {
+        hasUpperCase = true;
+        break;
+      }
+    }
+
+    if (!hasUpperCase) {
+      const formPass = pass.closest(".form");
+      formPass.classList.add("error");
+      formPass.querySelector("small").textContent =
+        "Error: Mật khẩu phải có ít nhất một chữ cái in hoa";
+      hasError = true;
+    }
+
+    // Kiểm tra mật khẩu có ít nhất một ký tự đặc biệt
+    const specialCharPattern = /[!@#$%^&*(),.?":{}|<>]/;
+    if (!specialCharPattern.test(pass.value)) {
+      const formPass = pass.closest(".form");
+      formPass.classList.add("error");
+      formPass.querySelector("small").textContent =
+        "Error: Mật khẩu phải có ít nhất một ký tự đặc biệt";
+      hasError = true;
+    }
   }
 
   // Kiểm tra trường xác nhận mật khẩu
@@ -69,7 +110,36 @@ function showError() {
 
   // Nếu không có lỗi, có thể thực hiện hành động đăng nhập (nếu cần)
   if (!hasError) {
-    // Thực hiện hành động đăng nhập
     alert("Đăng nhập thành công");
   }
 }
+
+document.querySelector("#onPass").addEventListener("click", function () {
+  const temp = document.querySelector("#pass");
+  const formOnPass = temp.closest(".form");
+  const icon = formOnPass.querySelector("i");
+  if (temp.type === "password") {
+    icon.classList.add("fa-eye");
+    icon.classList.remove("fa-eye-slash");
+    temp.type = "text";
+  } else {
+    icon.classList.add("fa-eye-slash");
+    icon.classList.remove("fa-eye");
+    temp.type = "password";
+  }
+});
+
+document.querySelector("#onCheckPass").addEventListener("click", function () {
+  const temp = document.querySelector("#check_pass");
+  const formOnPass = temp.closest(".form");
+  const icon = formOnPass.querySelector("i");
+  if (temp.type === "password") {
+    icon.classList.add("fa-eye");
+    icon.classList.remove("fa-eye-slash");
+    temp.type = "text";
+  } else {
+    icon.classList.add("fa-eye-slash");
+    icon.classList.remove("fa-eye");
+    temp.type = "password";
+  }
+});
