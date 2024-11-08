@@ -4,15 +4,18 @@
   --light-blue: rgb(160, 210, 255);
   --light-gray: #ebebeb;
 }
+
 .mySlides {
   min-width: 100%;
   overflow: hidden;
 }
+
 .mySlides-img {
   margin-left: -15%;
   width: 130%;
   height: auto;
 }
+
 /* end slider */
 
 .iam-iwant {
@@ -23,6 +26,8 @@
   background: #fff;
   border-bottom: 1px solid #d4d4d4;
 }
+
+
 
 .iwant-select {
   width: 400px;
