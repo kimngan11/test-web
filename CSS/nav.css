@@ -1,8 +1,8 @@
 /* navigation */
 
-:root{
+:root {
   --color-blue: rgb(20, 30, 210);
-  --light-blue:rgb(160, 210, 255);
+  --light-blue: rgb(160, 210, 255);
   --light-gray: #ebebeb;
 }
 
@@ -42,7 +42,6 @@
   padding: 0 15px;
 }
 
-
 .navbar-menu-right {
   display: flex;
   justify-content: flex-end;
@@ -70,7 +69,6 @@
   height: 24px;
 }
 
-
 .navbar-btn button {
   font-weight: 700;
   text-transform: uppercase;
@@ -87,11 +85,15 @@
   .box {
     max-width: 900px;
   }
-  .navbar-menu-right {
-    display: none;
+  .search input {
+    width: 150px;
+  }
+
+  .navbar-menu-link .navbar-links {
+    font-size: 12px;
+    padding: 0 5px;
   }
 }
-
 
 /* menu-box */
 
@@ -137,7 +139,6 @@
   color: var(--color-blue);
   left: 10px;
 }
-
 
 .list li {
   margin: 20px 30px;
@@ -190,7 +191,6 @@
   font-size: 16px;
   padding-right: 5px;
 }
-
 
 .grid-btn div {
   padding: 15px 0;

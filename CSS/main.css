@@ -1,7 +1,7 @@
 /* Slider */
-:root{
+:root {
   --color-blue: rgb(20, 30, 210);
-  --light-blue:rgb(160, 210, 255);
+  --light-blue: rgb(160, 210, 255);
   --light-gray: #ebebeb;
 }
 .mySlides {
@@ -256,7 +256,7 @@
 
 .home-sp-text {
   display: block;
-  width: 100%;
+  width: auto;
   height: 104px;
   font-size: 16px;
   line-height: 26px;
@@ -281,7 +281,7 @@
 .home-pr-content {
   display: block;
   width: 100%;
-  background:var(--light-gray);
+  background: var(--light-gray);
   height: 380px;
   margin: 0 20px;
 }
@@ -316,4 +316,57 @@
 
 .home-pr-content a {
   margin: 20px 0 0 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-sp-list .item {
+    width: 220px;
+    height: 210px;
+  }
+
+  .home-sp-icon img {
+    width: 48px !important;
+    height: 48px !important;
+    margin: 0;
+  }
+
+  .home-sp-tit {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .home-sp-text {
+    height: 55px;
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .item {
+    margin: 0;
+  }
+
+  .home-pr-list {
+    margin-left: 20px;
+  }
+
+  .home-pr-content {
+    width: 220px;
+    height: 240px;
+    margin: 0;
+  }
+  .home-pr-img,
+  .home-pr-img img {
+    width: 220px;
+    height: 125px;
+  }
+
+  .home-pr-tit {
+    height: 55px !important;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+
+  .btn-flat-style1 {
+    margin-top: 0 !important;
+  }
 }
